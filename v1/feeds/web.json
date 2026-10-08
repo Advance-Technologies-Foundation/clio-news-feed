@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "channel": "web",
+  "items": [
+    {
+      "id": "2026-10-09-clio-web-to-mobile-pages",
+      "type": "release",
+      "priority": "normal",
+      "title": "Turn Freedom UI web pages into mobile pages with clio",
+      "audiences": [
+        "developer"
+      ],
+      "body": "An AI agent connected to clio version 8.1.0.137 turns a Freedom UI web page into a mobile page with its fields, data bindings and captions.",
+      "cta": {
+        "label": "Read release notes",
+        "url": "https://github.com/Advance-Technologies-Foundation/clio/releases/tag/8.1.0.137"
+      },
+      "publishedAt": "2026-10-08T22:24:00.000Z",
+      "expiresAt": "2026-11-08T00:00:00.000Z",
+      "trending": {
+        "hours": 120
+      },
+      "media": {
+        "type": "image",
+        "url": "https://advance-technologies-foundation.github.io/clio-news-feed/v1/media/2026/10/clio-web-to-mobile-page.jpg",
+        "alt": "A Documents record page in Creatio on the left and the same page converted to a mobile page on the right"
+      }
+    },
+    {
+      "id": "2026-10-07-clio-news-is-here",
+      "type": "release",
+      "priority": "normal",
+      "title": "See clio and Creatio developer news in Clio Satellite",
+      "audiences": [
+        "admin",
+        "developer",
+        "other"
+      ],
+      "body": "Clio Satellite 2.7 shows news about clio and Creatio developer tools on the login page and in the app. Turn it on in extension options.",
+      "cta": {
+        "label": "Read release notes",
+        "url": "https://github.com/Advance-Technologies-Foundation/clio-satellite/releases/tag/v2.7"
+      },
+      "publishedAt": "2026-10-08T21:00:00.000Z",
+      "expiresAt": "2026-11-07T00:00:00.000Z",
+      "trending": {
+        "hours": 72
+      },
+      "media": {
+        "type": "image",
+        "url": "https://advance-technologies-foundation.github.io/clio-news-feed/v1/media/2026/10/clio-satellite-whats-new.jpg",
+        "alt": "Clio satellite menu in Creatio with the What's new row and the news panel open next to it"
+      }
+    }
+  ]
+}

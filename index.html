@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>clio news · Creatio developer tools</title>
+<meta name="description" content="Releases, tips and events for clio, Clio Satellite and Creatio developer tools.">
+<link rel="alternate" type="application/atom+xml" href="feed.xml" title="clio news">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#ff4013">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#ff4013;--accent-dark:#db2d00;--fg:#181818;--muted:#707070;--line:#e6e6e6;--soft:#f3f3f3;--bg:#fff;--card:#fff;
+--release:#ff4013;--tip:#007bff;--event:#22ac14;--breaking:#c62828;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--fg:#f3f3f3;--muted:#a3a3a3;--line:#2c2c2c;--soft:#1f1f1f;--bg:#121212;--card:#181818;--tip:#5aa9ff;--event:#4cc93f;--breaking:#ff6b6b;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 "Open Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+header.top{position:sticky;top:0;z-index:2;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:24px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 18px/1 Montserrat,sans-serif;letter-spacing:-.01em}
+.brand i{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 18%,transparent)}
+.brand span{color:var(--muted);font-weight:500}
+nav{margin-left:auto;display:flex;gap:20px;font:500 14px/1 Montserrat,sans-serif}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--accent)}
+.hero{padding:56px 0 24px}
+.hero h1{margin:0 0 12px;font:700 40px/1.15 Montserrat,sans-serif;letter-spacing:-.02em}
+.hero p{margin:0 0 24px;max-width:600px;color:var(--muted);font-size:17px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 24px;border-radius:1000px;font:500 15px/1 Montserrat,sans-serif;text-decoration:none;border:1.5px solid var(--accent);transition:background .15s,color .15s}
+.btn--primary{background:var(--accent);color:#fff}.btn--primary:hover{background:var(--accent-dark);border-color:var(--accent-dark)}
+.btn--ghost{color:var(--accent)}.btn--ghost:hover{background:var(--accent);color:#fff}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:32px 0 8px;padding:0;list-style:none}
+.chip{height:34px;padding:0 16px;border-radius:1000px;border:1px solid var(--line);background:var(--card);color:var(--fg);font:500 13px/1 Montserrat,sans-serif;cursor:pointer}
+.chip:hover{border-color:var(--accent)}.chip[aria-pressed=true]{background:var(--fg);border-color:var(--fg);color:var(--bg)}
+.month h2{margin:40px 0 16px;font:600 13px/1 Montserrat,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 28px;margin:0 0 16px;transition:box-shadow .2s,border-color .2s}
+.card:hover{border-color:transparent;box-shadow:0 12px 32px rgba(0,0,0,.08)}
+.card::before{content:"";position:absolute;left:0;top:24px;bottom:24px;width:3px;border-radius:0 3px 3px 0;background:var(--c)}
+.card--release{--c:var(--release)}.card--tip{--c:var(--tip)}.card--event{--c:var(--event)}.card--breaking{--c:var(--breaking)}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px;color:var(--muted);font-size:13px}
+.badge{padding:3px 10px;border-radius:1000px;font:600 11px/1.4 Montserrat,sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--c);background:color-mix(in srgb,var(--c) 12%,transparent)}
+.badge--release{--c:var(--release)}.badge--tip{--c:var(--tip)}.badge--event{--c:var(--event)}.badge--breaking{--c:var(--breaking)}
+.card h3{margin:10px 0 6px;font:600 20px/1.35 Montserrat,sans-serif;letter-spacing:-.01em}
+.body{margin:0;color:var(--fg);opacity:.85}
+.foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-top:16px}
+.cta{color:var(--accent);font:600 14px/1 Montserrat,sans-serif;text-decoration:none}.cta:hover{text-decoration:underline}
+.for{color:var(--muted);font-size:12px}
+.media{display:block;position:relative;width:100%;max-width:640px;aspect-ratio:16/9;margin-top:16px;border-radius:12px;border:1px solid var(--line);overflow:hidden;background:var(--soft);object-fit:cover}
+.media--video img{display:block;width:100%;height:100%;object-fit:cover}
+.media--video .play{position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:var(--accent);box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.media--video .play::after{content:"";position:absolute;left:26px;top:20px;border-style:solid;border-width:12px 0 12px 20px;border-color:transparent transparent transparent #fff}
+.empty{margin:40px 0;padding:56px 24px;text-align:center;border:1px dashed var(--line);border-radius:16px;background:var(--soft);color:var(--muted)}
+.empty h2{margin:12px 0 4px;color:var(--fg);font:600 20px/1.3 Montserrat,sans-serif}.empty p{margin:0}
+footer{margin-top:64px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;padding-bottom:32px}
+footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
+[hidden]{display:none!important}
+@media (max-width:600px){.wrap{padding:0 16px}nav a.opt{display:none}.hero{padding-top:36px}.hero h1{font-size:30px}.card{padding:20px}}
+</style>
+</head><body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="./"><i aria-hidden="true"></i>clio <span>news</span></a>
+  <nav aria-label="Links">
+    <a href="https://github.com/Advance-Technologies-Foundation/clio" target="_blank" rel="noopener noreferrer">clio on GitHub</a>
+    <a class="opt" href="https://academy.creatio.com" target="_blank" rel="noopener noreferrer">Creatio Academy</a>
+    <a href="feed.xml">RSS</a>
+  </nav>
+</div></header>
+<main class="wrap">
+  <section class="hero">
+    <h1>What's new in Creatio developer tools</h1>
+    <p>Releases, tips and events for clio, Clio Satellite and the tools that help you build on Creatio.</p>
+    <div class="btns">
+      <a class="btn btn--primary" href="feed.xml">Subscribe via RSS</a>
+      <a class="btn btn--ghost" href="https://chromewebstore.google.com/detail/clio-satellite/hibchlehfihkjbcdidfjbngmjiainhda" target="_blank" rel="noopener noreferrer">Get Clio Satellite</a>
+    </div>
+  </section>
+  
+  <section class="month"><h2>October 2026</h2>
+<article class="card card--release" id="2026-10-09-clio-web-to-mobile-pages" data-type="release">
+  <div class="meta">
+    <span class="badge badge--release">Release</span>
+    <span>clio</span>
+    <span aria-hidden="true">·</span>
+    <time datetime="2026-10-08T22:24:00.000Z">Oct 8, 2026</time>
+  </div>
+  <h3>Turn Freedom UI web pages into mobile pages with clio</h3>
+  <p class="body">An AI agent connected to clio version 8.1.0.137 turns a Freedom UI web page into a mobile page with its fields, data bindings and captions.</p>
+  <img class="media" src="v1/media/2026/10/clio-web-to-mobile-page.jpg" alt="A Documents record page in Creatio on the left and the same page converted to a mobile page on the right" loading="lazy" decoding="async">
+  <div class="foot"><a class="cta" href="https://github.com/Advance-Technologies-Foundation/clio/releases/tag/8.1.0.137" target="_blank" rel="noopener noreferrer">Read release notes<span aria-hidden="true"> →</span></a><span class="for">For Development</span></div>
+</article>
+<article class="card card--release" id="2026-10-07-clio-news-is-here" data-type="release">
+  <div class="meta">
+    <span class="badge badge--release">Release</span>
+    <span>Clio Satellite</span>
+    <span aria-hidden="true">·</span>
+    <time datetime="2026-10-08T21:00:00.000Z">Oct 8, 2026</time>
+  </div>
+  <h3>See clio and Creatio developer news in Clio Satellite</h3>
+  <p class="body">Clio Satellite 2.7 shows news about clio and Creatio developer tools on the login page and in the app. Turn it on in extension options.</p>
+  <img class="media" src="v1/media/2026/10/clio-satellite-whats-new.jpg" alt="Clio satellite menu in Creatio with the What&#39;s new row and the news panel open next to it" loading="lazy" decoding="async">
+  <div class="foot"><a class="cta" href="https://github.com/Advance-Technologies-Foundation/clio-satellite/releases/tag/v2.7" target="_blank" rel="noopener noreferrer">Read release notes<span aria-hidden="true"> →</span></a></div>
+</article>
+</section>
+</main>
+<footer><div class="wrap">
+  <span>clio news · Advance Technologies Foundation</span>
+  <span><a href="feed.xml">RSS feed</a> · <a href="https://github.com/Advance-Technologies-Foundation" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+</div></footer>
+
+</body></html>

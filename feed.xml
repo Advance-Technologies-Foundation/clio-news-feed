@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>clio news</title>
+  <subtitle>Releases, tips and events for clio, Clio Satellite and Creatio developer tools</subtitle>
+  <id>https://advance-technologies-foundation.github.io/clio-news-feed/</id>
+  <link rel="self" type="application/atom+xml" href="https://advance-technologies-foundation.github.io/clio-news-feed/feed.xml"/>
+  <link rel="alternate" type="text/html" href="https://advance-technologies-foundation.github.io/clio-news-feed/"/>
+  <icon>https://advance-technologies-foundation.github.io/clio-news-feed/favicon.svg</icon>
+  <author><name>Advance Technologies Foundation</name></author>
+  <updated>2026-10-08T22:24:00.000Z</updated>
+  <entry>
+    <id>https://advance-technologies-foundation.github.io/clio-news-feed/#2026-10-09-clio-web-to-mobile-pages</id>
+    <title>Turn Freedom UI web pages into mobile pages with clio</title>
+    <updated>2026-10-08T22:24:00.000Z</updated>
+    <published>2026-10-08T22:24:00.000Z</published>
+    <link rel="alternate" type="text/html" href="https://advance-technologies-foundation.github.io/clio-news-feed/#2026-10-09-clio-web-to-mobile-pages"/>
+    <link rel="related" href="https://github.com/Advance-Technologies-Foundation/clio/releases/tag/8.1.0.137" title="Read release notes"/>
+    <category term="release"/>
+    <summary>An AI agent connected to clio version 8.1.0.137 turns a Freedom UI web page into a mobile page with its fields, data bindings and captions.</summary>
+  </entry>
+  <entry>
+    <id>https://advance-technologies-foundation.github.io/clio-news-feed/#2026-10-07-clio-news-is-here</id>
+    <title>See clio and Creatio developer news in Clio Satellite</title>
+    <updated>2026-10-08T21:00:00.000Z</updated>
+    <published>2026-10-08T21:00:00.000Z</published>
+    <link rel="alternate" type="text/html" href="https://advance-technologies-foundation.github.io/clio-news-feed/#2026-10-07-clio-news-is-here"/>
+    <link rel="related" href="https://github.com/Advance-Technologies-Foundation/clio-satellite/releases/tag/v2.7" title="Read release notes"/>
+    <category term="release"/>
+    <summary>Clio Satellite 2.7 shows news about clio and Creatio developer tools on the login page and in the app. Turn it on in extension options.</summary>
+  </entry>
+</feed>
