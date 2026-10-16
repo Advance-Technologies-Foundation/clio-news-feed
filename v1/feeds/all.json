@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "channel": "all",
+  "items": [
+    {
+      "id": "2026-10-16-creatio-web-farm-kubernetes",
+      "type": "release",
+      "priority": "normal",
+      "title": "Install packages on Creatio web farms on Kubernetes",
+      "audiences": [
+        "admin",
+        "developer"
+      ],
+      "body": "clio version 8.1.0.140 installs packages on the design node. Control Plane rolls them out.",
+      "cta": {
+        "label": "Read release notes",
+        "url": "https://academy.creatio.com/guides/resources/release-notes/10x-unlimited-release-notes"
+      },
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "expiresAt": "2026-11-16T00:00:00.000Z",
+      "trending": {
+        "hours": 120
+      },
+      "media": {
+        "type": "image",
+        "url": "https://advance-technologies-foundation.github.io/clio-news-feed/v1/media/2026/10/creatio-web-farm-kubernetes.webp",
+        "alt": "clio push-pkg installs a package on the design node of a Creatio web farm; Control Plane rolls it out to workers"
+      },
+      "product": "clio",
+      "channels": [
+        "clio-satellite",
+        "web"
+      ]
+    },
+    {
+      "id": "2026-10-13-clio-satellite-edge-blob",
+      "type": "release",
+      "priority": "normal",
+      "title": "Park the Clio Satellite buttons at any screen edge",
+      "audiences": [
+        "admin",
+        "developer"
+      ],
+      "body": "In Clio Satellite 2.10, drag the buttons to an edge to hide them as a blob. Click it to restore.",
+      "cta": {
+        "label": "Read release notes",
+        "url": "https://github.com/Advance-Technologies-Foundation/clio-satellite/releases/tag/v2.10"
+      },
+      "publishedAt": "2026-10-13T00:00:00.000Z",
+      "expiresAt": "2026-11-13T00:00:00.000Z",
+      "trending": {
+        "hours": 120
+      },
+      "media": {
+        "type": "image",
+        "url": "https://advance-technologies-foundation.github.io/clio-news-feed/v1/media/2026/10/clio-satellite-edge-blob.webp",
+        "alt": "The Clio Satellite buttons and the small black blob with an orange dot that they turn into at the right screen edge"
+      },
+      "product": "clio-satellite",
+      "channels": [
+        "clio-satellite",
+        "web"
+      ]
+    },
+    {
+      "id": "2026-10-21-ai-agent-business-processes",
+      "type": "release",
+      "priority": "normal",
+      "title": "Describe a business process, and your AI agent builds it",
+      "audiences": [
+        "developer"
+      ],
+      "body": "Your AI agent builds and checks it via clio MCP. Use clio version 8.1.0.116 or later.",
+      "cta": {
+        "label": "Read release notes",
+        "url": "https://github.com/Advance-Technologies-Foundation/clio/releases/tag/8.1.0.116"
+      },
+      "publishedAt": "2026-10-12T14:00:00.000Z",
+      "expiresAt": "2026-11-20T00:00:00.000Z",
+      "trending": {
+        "hours": 120
+      },
+      "media": {
+        "type": "image",
+        "url": "https://advance-technologies-foundation.github.io/clio-news-feed/v1/media/2026/10/ai-agent-business-processes.webp",
+        "alt": "A plain-language request next to the business process built from it, with steps New lead, Assign owner and Send email"
+      },
+      "product": "clio",
+      "channels": [
+        "clio-satellite",
+        "web"
+      ]
+    }
+  ]
+}
