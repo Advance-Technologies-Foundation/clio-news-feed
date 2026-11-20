@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>clio news</title>
+  <subtitle>Releases, tips and events for clio, Clio Satellite and Creatio developer tools</subtitle>
+  <id>https://advance-technologies-foundation.github.io/clio-news-feed/</id>
+  <link rel="self" type="application/atom+xml" href="https://advance-technologies-foundation.github.io/clio-news-feed/feed.xml"/>
+  <link rel="alternate" type="text/html" href="https://advance-technologies-foundation.github.io/clio-news-feed/"/>
+  <icon>https://advance-technologies-foundation.github.io/clio-news-feed/favicon.svg</icon>
+  <author><name>Advance Technologies Foundation</name></author>
+  <updated>2026-10-16T00:00:00.000Z</updated>
+  <entry>
+    <id>https://advance-technologies-foundation.github.io/clio-news-feed/#2026-10-16-creatio-web-farm-kubernetes</id>
+    <title>Install packages on Creatio web farms on Kubernetes</title>
+    <updated>2026-10-16T00:00:00.000Z</updated>
+    <published>2026-10-16T00:00:00.000Z</published>
+    <link rel="alternate" type="text/html" href="https://advance-technologies-foundation.github.io/clio-news-feed/#2026-10-16-creatio-web-farm-kubernetes"/>
+    <link rel="related" href="https://academy.creatio.com/guides/resources/release-notes/10x-unlimited-release-notes" title="Read release notes"/>
+    <category term="release"/>
+    <summary>clio version 8.1.0.140 installs packages on the design node. Control Plane rolls them out.</summary>
+  </entry>
+  <entry>
+    <id>https://advance-technologies-foundation.github.io/clio-news-feed/#2026-10-13-clio-satellite-edge-blob</id>
+    <title>Park the Clio Satellite buttons at any screen edge</title>
+    <updated>2026-10-13T00:00:00.000Z</updated>
+    <published>2026-10-13T00:00:00.000Z</published>
+    <link rel="alternate" type="text/html" href="https://advance-technologies-foundation.github.io/clio-news-feed/#2026-10-13-clio-satellite-edge-blob"/>
+    <link rel="related" href="https://github.com/Advance-Technologies-Foundation/clio-satellite/releases/tag/v2.10" title="Read release notes"/>
+    <category term="release"/>
+    <summary>In Clio Satellite 2.10, drag the buttons to an edge to hide them as a blob. Click it to restore.</summary>
+  </entry>
+  <entry>
+    <id>https://advance-technologies-foundation.github.io/clio-news-feed/#2026-10-21-ai-agent-business-processes</id>
+    <title>Describe a business process, and your AI agent builds it</title>
+    <updated>2026-10-12T14:00:00.000Z</updated>
+    <published>2026-10-12T14:00:00.000Z</published>
+    <link rel="alternate" type="text/html" href="https://advance-technologies-foundation.github.io/clio-news-feed/#2026-10-21-ai-agent-business-processes"/>
+    <link rel="related" href="https://github.com/Advance-Technologies-Foundation/clio/releases/tag/8.1.0.116" title="Read release notes"/>
+    <category term="release"/>
+    <summary>Your AI agent builds and checks it via clio MCP. Use clio version 8.1.0.116 or later.</summary>
+  </entry>
+  <entry>
+    <id>https://advance-technologies-foundation.github.io/clio-news-feed/#2026-11-04-object-permissions-with-clio</id>
+    <title>Grant object permissions to any role in one command</title>
+    <updated>2026-10-12T14:00:00.000Z</updated>
+    <published>2026-10-12T14:00:00.000Z</published>
+    <link rel="alternate" type="text/html" href="https://advance-technologies-foundation.github.io/clio-news-feed/#2026-11-04-object-permissions-with-clio"/>
+    <link rel="related" href="https://github.com/Advance-Technologies-Foundation/clio/releases/tag/8.1.0.138" title="Read release notes"/>
+    <category term="release"/>
+    <summary>Use clio set-object-rights or ask your AI agent. Available from clio version 8.1.0.138.</summary>
+  </entry>
+  <entry>
+    <id>https://advance-technologies-foundation.github.io/clio-news-feed/#2026-10-09-clio-web-to-mobile-pages</id>
+    <title>Turn Freedom UI web pages into mobile pages with clio</title>
+    <updated>2026-10-08T22:24:00.000Z</updated>
+    <published>2026-10-08T22:24:00.000Z</published>
+    <link rel="alternate" type="text/html" href="https://advance-technologies-foundation.github.io/clio-news-feed/#2026-10-09-clio-web-to-mobile-pages"/>
+    <link rel="related" href="https://github.com/Advance-Technologies-Foundation/clio/releases/tag/8.1.0.137" title="Read release notes"/>
+    <category term="release"/>
+    <summary>An AI agent connected to clio version 8.1.0.137 turns a Freedom UI web page into a mobile page with its fields, data bindings and captions.</summary>
+  </entry>
+</feed>
